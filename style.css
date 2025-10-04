@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Poppins:ital,wght@1,200&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #11061f;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  height: 4rem;
+  background-color: #1A0B2E;
+  align-content: center;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  color: white;
+}
+main {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.contaner {
+  width: 60%;
+  padding-bottom: 10vh;
+}
+.Home {
+  margin-top:100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.profile {
+  display: flex;
+  justify-content:start;
+}
+.profile span {
+  margin: 45px 0px 0px 30px;
+  width:auto;
+  font-size: 30px;
+  line-height: 1;
+}
+.profile img{
+  width: 30%;
+  border-radius:50%;
+  margin: 10px;
+}
+.contect {
+  background-color: #080909;
+  display: flex;
+  justify-content: center;
+}
+.box h3 {
+  color: rgb(98, 112, 124);
+}
+.box {
+  margin: 50px;
+  text-align: center;
+  width: 30%;
+  color: white;
+}
+.sms {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+.sms label {
+  margin-top: 10px;
+}
+input {
+  outline: none;
+  border-radius: 5px;
+  height: 30px;
+}
+textarea{
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(64, 188, 64);
+}
+button:active {
+  background-color: rgb(47, 29, 189);
+  color: rgb(255, 255, 255);
+}
+footer {
+  background-color:#1b1a1b;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100px;
+}
+.ids {
+  margin-top:10px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+a{
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+}
+span{
+  padding: 2px;
+}
+span:hover i,
+span:hover a {
+  color: black;
+}
+span:hover {
+  border-radius: 5px;
+  background-color: white;
+}
