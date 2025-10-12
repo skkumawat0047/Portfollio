@@ -20,6 +20,9 @@ li {
   list-style: none;
   color: white;
 }
+ul button {
+  background: repeating-linear-gradient(rgba(28, 9, 244, 0.5),rgba(146, 69, 111, 0.6));
+}
 main {
   display: flex;
   /* justify-content: center; */
@@ -83,6 +86,9 @@ input {
 }
 textarea{
   border-radius: 5px;
+  resize: vertical;
+  overflow: auto;
+  min-height: 100px;
   outline: none;
 }
 button {
@@ -110,21 +116,23 @@ footer {
   margin-top:10px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 10px;
+  font-size: 30px;
 }
 a{
   color: white;
   text-decoration: none;
-  padding: 2px;
+  /* padding: 2px; */
 }
-span{
-  padding: 2px;
+.ids span{
+  padding:0px 5px
 }
-span:hover i,
-span:hover a {
+.ids span:hover i,
+.ids span:hover a {
   color: black;
 }
-span:hover {
+.ids span:hover {
   border-radius: 5px;
   background-color: white;
+
 }
