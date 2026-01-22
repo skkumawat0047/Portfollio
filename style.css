@@ -31,7 +31,7 @@ header {
 ul {
   width:60%;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 li {
@@ -41,7 +41,7 @@ li {
 
 ul button {
   background: repeating-linear-gradient(
-    rgba(28, 9, 244, 0.5),
+    rgba(220, 218, 238, 0.5),
     rgba(146, 69, 111, 0.6)
   );
 }
@@ -259,6 +259,17 @@ a {
 .skill1 img{
   width: 30px;
   border-radius: 4px;
+}
+.contectbox h1{
+  margin-bottom: 40px;
+}
+.contectbox p{
+  margin-top: 20px;
+  width: fit-content;
+}
+.contectbox .email:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   .container {
