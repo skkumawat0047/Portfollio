@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Poppins:ital,wght@1,200&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("sanjay.jpg") center / cover no-repeat;
+  opacity: 0.3;  
+  z-index: -1;
+} */
 body {
   background-color: #11061f;
   font-family: "Poppins", sans-serif;
@@ -15,13 +25,13 @@ header {
   height: 4rem;
   background-color: #1A0B2E;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 ul {
-  width: 100%;
+  width:60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between
 }
 
 li {
@@ -47,6 +57,9 @@ main {
   padding-bottom: 10vh;
 }
 
+section {
+  background-color: rgba(30, 29, 42, 0.5);
+}
 .Home {
   margin: 80px 28px 28px 28px;
   color: rgb(198, 203, 208);
@@ -62,9 +75,15 @@ main {
   align-items: center;
 }
 .profile img {
-  width: 21vw;
-  border: 0.2em solid transparent;
+  width: 15vw;
   border-radius: 50%;
+}
+.profile img:hover {
+  /* width: 15vw;
+  border: 0.2em solid transparent;
+  border-radius: 50%; */
+  cursor: none  ;
+   box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
 }
 .profile span {
   margin-left: 30px;
@@ -108,12 +127,13 @@ textarea {
 }
 
 input {
-  height: 30px;
+  height: 40px;
+  padding:0px 4px;
 }
 
 textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 button {
@@ -140,7 +160,7 @@ footer {
   flex-direction: column;
   align-items: center;
   color: white;
-  height: 100px;
+  height: 110px;
 }
 
 .ids {
@@ -168,28 +188,77 @@ a {
 .ids span:hover a {
   color: black;
 }
+.madeby {
+  margin: 20px 0px;
+}
+.madeby:hover{
+  cursor: not-allowed;
+}
 .allproject{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap:20px;
 }
 .project img{
   margin-top: 5px;
   width:80px;
 }
+.project:hover, .skillbox:hover{
+  cursor:pointer ;
+  box-sizing:border-box;
+  box-shadow:
+    0px 0px 10px 8px rgb(49, 111, 173);
+
+}
 .content{
   margin-left: 10px;
+  position:absolute;
+  justify-items: end;
 }
 .project{
-  border: 2px solid rgb(255, 0, 217);
+  border: 1px solid rgb(255, 0, 217);
   border-radius: 20px;
-  display: flex;
-  max-width: 450px;
+  background-color: #1A0B2E;
   min-width: 300px;
-  margin: 20px;
+  height: 350px;
   padding: 8px;
 }
-hr{
+.heading{
   color: white;
+}
+#skills .Home{
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+}
+.skillbox {
+  border: 1px solid rgb(255, 0, 217);
+  border-radius: 20px;
+  background-color: #1A0B2E;
+  max-width: 400px;
+  padding:20px;
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+.skill1{
+  border: 0.5px solid white;
+  border-radius: 10px;
+  padding:5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.skill1 img{
+  width: 30px;
+  border-radius: 4px;
 }
 @media screen and (max-width: 576px) {
   .container {
@@ -222,7 +291,6 @@ hr{
   }
 }
 
-/* 📱 Tablet */
 @media screen and (min-width: 577px) and (max-width: 900px) {
   .container {
     width: 80%;
@@ -233,13 +301,12 @@ hr{
   }
 }
 
-/* 💻 Desktop */
 @media screen and (min-width: 901px) {
   .container {
     width: 60%;
   }
 
   .box {
-    width: 30%;
+    width: 25%;
   }
 }
