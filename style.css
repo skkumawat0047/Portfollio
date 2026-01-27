@@ -271,6 +271,16 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
+@media screen and (max-width:550px){
+  header ul{
+    width: 100%;
+  }
+  header ul li button{
+    margin: 7px 4px;
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 576px) {
   .container {
     width: 95%;
@@ -319,5 +329,11 @@ a {
 
   .box {
     width: 25%;
+  }
+}
+@media screen and (min-width:550px) and (max-width:1000px){
+  header ul{
+    width: 100%;
+    padding:0px 25px;
   }
 }
