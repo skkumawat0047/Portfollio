@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  /* padding: 1em;
+   */
+   background-color: whitesmoke;
+   border-radius:10px;
+   width: 3px;
+   height: 20px;
+}
 /* body::before{
   content: "";
   position: fixed;
@@ -40,7 +48,9 @@ li {
   list-style: none;
   color: white;
 }
-
+a button{
+  transition: 1s;
+}
 ul button {
   background: repeating-linear-gradient(
     rgba(220, 218, 238, 0.5),
@@ -85,7 +95,7 @@ section {
   border: 0.2em solid transparent;
   border-radius: 50%; */
   cursor: none  ;
-   box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
+  box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
 }
 .profile span {
   margin-left: 30px;
@@ -207,7 +217,14 @@ a {
 }
 .project img{
   margin-top: 5px;
-  width:80px;
+  max-width: 300px;
+  border-radius: 10px;
+  height: 180px;
+  width: max-content;
+}
+.project .img img{
+  width: 100%;
+  object-fit: contain;
 }
 .project:hover, .skillbox:hover{
   cursor:pointer ;
@@ -217,16 +234,24 @@ a {
 
 }
 .content{
-  margin-left: 10px;
-  position:absolute;
-  justify-items: end;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+.content p{
+  padding-top: 10px;
+  font-size: x-small;
+  height: 70px;
+  overflow-y: scroll;
+  /* scr */
 }
 .project{
   border: 1px solid rgb(255, 0, 217);
   border-radius: 20px;
   background-color: #1A0B2E;
-  min-width: 300px;
-  height: 350px;
+  width: 320px;
+  height: 380px;
   padding: 8px;
 }
 .heading{
@@ -280,7 +305,7 @@ a {
   header ul li button{
     margin: 7px 4px;
     padding: 5px 10px;
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -295,6 +320,7 @@ a {
 
   .profile img {
     width: 60%;
+    box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
   }
 
   .profile span {
