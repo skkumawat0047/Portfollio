@@ -20,7 +20,9 @@ body {
   background-color: #11061f;
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 header {
   height: 4rem;
   background-color: #1A0B2E;
