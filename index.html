@@ -328,15 +328,20 @@
                 or opportunities to be part of something impactful.
                 Feel free to drop a message — I’ll get back to you as soon as possible.
             </h3>
-            <div class="sms">
+            <form class="sms" action="https://formspree.io/f/xeelqjdz" method="POST">
+
                 <label>Name:</label>
-                <input type="text" placeholder="Name" required>
+                <input type="text" name="name" placeholder="Name" required>
+
                 <label>Email:</label>
-                <input type="email" placeholder="Email" required>
+                <input type="email" name="email" placeholder="Email" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
-            </div>
-            <button class="submit">submit</button>
+
+                <button type="submit" class="submit">Submit</button>
+
+            </form>
         </div>
     </div>
     <footer>

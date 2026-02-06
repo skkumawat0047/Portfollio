@@ -144,9 +144,6 @@ section {
 .sms label {
   margin-top: 10px;
 }
-.box button{
-  width: 90%;
-}
 button:hover{
   background-color: aqua;
   cursor: pointer;
