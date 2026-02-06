@@ -32,7 +32,7 @@ html {
   scroll-behavior: smooth;
 }
 header {
-  height: 4rem;
+  /* height: 4rem; */
   background-color: #1A0B2E;
   display: flex;
   justify-content: center;
@@ -47,6 +47,7 @@ ul {
 li {
   list-style: none;
   color: white;
+  margin-bottom: 12px;
 }
 a button{
   transition: 1s;
@@ -131,6 +132,13 @@ section {
 .sms label {
   margin-top: 10px;
 }
+.box button{
+  width: 90%;
+}
+button:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
 
 input,
 textarea {
@@ -156,7 +164,8 @@ button {
   border: none;
   border-radius: 10px;
   background-color: rgb(64, 188, 64);
-  cursor: pointer;
+  /* cursor: pointer; */
+  width: 100%;
 }
 
 button:active {
@@ -227,11 +236,10 @@ a {
   object-fit: contain;
 }
 .project:hover, .skillbox:hover{
-  cursor:pointer ;
+  cursor:not-allowed ;
   box-sizing:border-box;
   box-shadow:
     0px 0px 10px 8px rgb(49, 111, 173);
-
 }
 .content{
   margin: 10px;
@@ -281,11 +289,22 @@ a {
   padding:5px 10px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  background-color: rgba(147, 143, 214, 0.4);
+  /* gap: 5px; */
 }
 .skill1 img{
   width: 30px;
   border-radius: 4px;
+}
+.skill2{
+  background-color: rgba(147, 143, 214, 0.4);
+  /* opacity: 0.6; */
+  align-self: center;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: rgb(180, 243, 255);
+  border: 0.5px solid white;
 }
 .contectbox h1{
   margin-bottom: 40px;
@@ -300,7 +319,7 @@ a {
 }
 @media screen and (max-width:550px){
   header ul{
-    width: 100%;
+    width: 95%;
   }
   header ul li button{
     margin: 7px 4px;
