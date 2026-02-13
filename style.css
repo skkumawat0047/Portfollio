@@ -5,14 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-::-webkit-scrollbar{
-  /* padding: 1em;
-   */
-   background-color: whitesmoke;
-   border-radius:10px;
-   width: 3px;
-   height: 20px;
+
+::-webkit-scrollbar {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 3px;
+  height: 10px;
 }
+
 /* body::before{
   content: "";
   position: fixed;
@@ -23,23 +23,29 @@
   background: url("sanjay.jpg") center / cover no-repeat;
   opacity: 0.3;  
   z-index: -1;
-} */
+  } */
 body {
   background-color: #11061f;
   font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 header {
   /* height: 4rem; */
   background-color: #1A0B2E;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
 ul {
-  width:60%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -49,14 +55,13 @@ li {
   color: white;
   margin-bottom: 12px;
 }
-a button{
+
+ul button {
   transition: 1s;
 }
+
 ul button {
-  background: repeating-linear-gradient(
-    rgba(220, 218, 238, 0.5),
-    rgba(146, 69, 111, 0.6)
-  );
+  background: repeating-linear-gradient(225deg, rgb(132, 0, 255), rgb(230, 0, 255) );
 }
 
 main {
@@ -67,14 +72,16 @@ main {
 
 .container {
   width: 60%;
+  font-family: cursive;
   padding-bottom: 10vh;
 }
 
 section {
   background-color: rgba(30, 29, 42, 0.5);
 }
+
 .Home {
-  margin: 80px 28px 28px 28px;
+  margin: 100px 28px 28px 28px;
   color: rgb(198, 203, 208);
   display: flex;
   flex-direction: column;
@@ -86,41 +93,46 @@ section {
 .profile {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
 .profile img {
-  width: 15vw;
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 20vw;
   border-radius: 50%;
+  border: 1.3px solid blue;
 }
 .profile img:hover {
-  /* width: 15vw;
-  border: 0.2em solid transparent;
-  border-radius: 50%; */
-  cursor: none  ;
+  cursor: none;
   box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
 }
+
 .profile span {
   margin-left: 30px;
   font-size: 30px;
   line-height: 1.2;
 }
-
-.box2 {
-  display: flex;
+.profile span h6{
+  margin-top: 25px;
+  color: rgba(220, 218, 238, 0.5);
 }
-.box2 .h{
-  max-width: 860px;
+.box2 button {
+  margin: 15px;
+  padding: 15px 50px;
+  border-radius: 70px;
+      background: repeating-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
 }
-.box2 button{
-  margin-top: 0px;
-  width:190px;
+.box2 button:hover{
+  margin: 10px;
+  padding: 20px  60px;;
 }
-
 .contect {
   background-color: #080909;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .box {
@@ -144,7 +156,8 @@ section {
 .sms label {
   margin-top: 10px;
 }
-button:hover{
+
+button:hover {
   background-color: aqua;
   cursor: pointer;
 }
@@ -157,7 +170,7 @@ textarea {
 
 input {
   height: 40px;
-  padding:0px 4px;
+  padding: 0px 4px;
 }
 
 textarea {
@@ -218,52 +231,60 @@ a {
 .ids span:hover a {
   color: black;
 }
+
 .madeby {
   margin: 20px 0px;
 }
-.madeby:hover{
+
+.madeby:hover {
   cursor: not-allowed;
 }
-.allproject{
+
+.allproject {
   justify-content: center;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
-  gap:20px;
+  gap: 20px;
 }
-.project img{
+
+.project img {
   margin-top: 5px;
   max-width: 300px;
   border-radius: 10px;
   height: 180px;
   width: max-content;
 }
-.project .img img{
+
+.project .img img {
   width: 100%;
   object-fit: contain;
 }
-.project:hover, .skillbox:hover{
-  cursor:not-allowed ;
-  box-sizing:border-box;
+
+.project:hover,
+.skillbox:hover {
+  cursor: not-allowed;
+  box-sizing: border-box;
   box-shadow:
     0px 0px 10px 8px rgb(49, 111, 173);
 }
-.content{
+
+.content {
   margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
 }
-.content p{
+
+.content p {
   padding-top: 10px;
   font-size: x-small;
   height: 70px;
   overflow-y: scroll;
   /* scr */
 }
-.project{
+
+.project {
   border: 1px solid rgb(255, 0, 217);
   border-radius: 20px;
   background-color: #1A0B2E;
@@ -271,41 +292,47 @@ a {
   height: 380px;
   padding: 8px;
 }
-.heading{
+
+.heading {
   color: white;
 }
-#skills .Home{
+
+#skills .Home {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: center;
 }
+
 .skillbox {
   border: 1px solid rgb(255, 0, 217);
   border-radius: 20px;
   background-color: #1A0B2E;
   max-width: 400px;
-  padding:20px;
+  padding: 20px;
   box-sizing: border-box;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
 }
-.skill1{
+
+.skill1 {
   border: 0.5px solid white;
   border-radius: 10px;
-  padding:5px 10px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   background-color: rgba(147, 143, 214, 0.4);
   /* gap: 5px; */
 }
-.skill1 img{
+
+.skill1 img {
   width: 30px;
   border-radius: 4px;
 }
-.skill2{
+
+.skill2 {
   background-color: rgba(147, 143, 214, 0.4);
   /* opacity: 0.6; */
   align-self: center;
@@ -315,64 +342,73 @@ a {
   color: rgb(180, 243, 255);
   border: 0.5px solid white;
 }
-.contectbox h1{
+
+.contectbox h1 {
   margin-bottom: 40px;
 }
-.contectbox p{
+
+.contectbox p {
   margin-top: 20px;
   width: fit-content;
 }
-.contectbox .email:hover{
+
+.contectbox .email:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-@media screen and (max-width:550px){
-  header ul{
+
+@media screen and (max-width:550px) {
+  header ul {
     width: 95%;
   }
-  header ul li button{
+
+  header ul li button {
     margin: 7px 4px;
     padding: 5px 10px;
     font-size: 15px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .container {
     width: 95%;
   }
-  
+
   .profile {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .profile img {
     width: 60%;
     box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
   }
-  
+
   .profile span {
     margin: 20px 0 0 0;
     font-size: 22px;
   }
-  
+
   .contect {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .box {
     width: 90%;
     margin: 20px 0;
     font-size: 14px;
   }
-  .box2{
+
+  .box2 {
     flex-direction: column;
   }
-  .h{
-    align-self:center;
+
+  .h {
+    align-self: center;
   }
-  .h button{
+
+  .h button {
     margin-top: 10px;
   }
 }
@@ -396,9 +432,10 @@ a {
     width: 25%;
   }
 }
-@media screen and (min-width:550px) and (max-width:1000px){
-  header ul{
+
+@media screen and (min-width:550px) and (max-width:1000px) {
+  header ul {
     width: 100%;
-    padding:0px 25px;
+    padding: 0px 25px;
   }
 }
