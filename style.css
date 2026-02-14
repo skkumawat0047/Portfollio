@@ -13,17 +13,6 @@
   height: 10px;
 }
 
-/* body::before{
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("sanjay.jpg") center / cover no-repeat;
-  opacity: 0.3;  
-  z-index: -1;
-  } */
 body {
   background-color: #11061f;
   font-family: "Poppins", sans-serif;
@@ -34,8 +23,6 @@ html {
 }
 
 header {
-  /* height: 4rem; */
-  background-color: #1A0B2E;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -45,23 +32,28 @@ header {
 }
 
 ul {
+  margin-top: 10px;
+  background-color: #1A0B2E;
+  opacity: 0.7;
+  border-radius: 30px;
+  padding: 0px 40px;
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
 
 li {
+  margin-top: 15px;
+  padding-bottom: 3px;
   list-style: none;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 12px;
+  font-size: larger;
 }
 
-ul button {
-  transition: 1s;
-}
-
-ul button {
-  background: repeating-linear-gradient(225deg, rgb(132, 0, 255), rgb(230, 0, 255) );
+li a:hover {
+  color: aqua;
+  text-decoration: underline;
 }
 
 main {
@@ -97,36 +89,57 @@ section {
 }
 
 .profile img {
-  margin-top: 50px;
-  margin-right: 30px;
-  width: 20vw;
+  margin: 30px;
+  margin-top: 40px;
+  width: 75%;
   border-radius: 50%;
   border: 1.3px solid blue;
 }
+
 .profile img:hover {
   cursor: none;
-  box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
+  box-shadow: 0px 0px 20px 5px rgb(83, 106, 129);
+   transition: 0.5s;  
+}
+
+.profiletext {
+  width: 50%;
+  padding-right: 50px;
 }
 
 .profile span {
   margin-left: 30px;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.2;
 }
-.profile span h6{
-  margin-top: 25px;
+
+.profile span h6 {
+  margin-top: 20px;
   color: rgba(220, 218, 238, 0.5);
 }
+
+button:hover{
+  transition: 0.5s;
+  background-color: aqua;
+}
 .box2 button {
-  margin: 15px;
+  max-width: 250px;
+  margin-top: 20px;
   padding: 15px 50px;
   border-radius: 70px;
-      background: repeating-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+  background: repeating-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+  color:white;
+  opacity: 75%;
 }
-.box2 button:hover{
-  margin: 10px;
-  padding: 20px  60px;;
+
+.box2 button:hover {
+  text-shadow: 2px 2px 8px #1A0B2E;
+  opacity: 100%;
+  box-shadow: 0px 0px 10px 2px aqua, inset 0px 0px 10px 2px aqua;
 }
+
+
+
 .contect {
   background-color: #080909;
   display: flex;
@@ -186,7 +199,6 @@ button {
   border: none;
   border-radius: 10px;
   background-color: rgb(64, 188, 64);
-  /* cursor: pointer; */
   width: 100%;
 }
 
@@ -239,7 +251,6 @@ a {
 .madeby:hover {
   cursor: not-allowed;
 }
-
 .allproject {
   justify-content: center;
   display: flex;
@@ -291,19 +302,22 @@ a {
   width: 320px;
   height: 380px;
   padding: 8px;
+  transition-duration: 0.5s;
 }
+
 
 .heading {
   color: white;
+  display: block;
+  justify-items: center;
+  max-width: 850px;
 }
-
 #skills .Home {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: center;
 }
-
 .skillbox {
   border: 1px solid rgb(255, 0, 217);
   border-radius: 20px;
@@ -315,16 +329,17 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
+  transition: 0.5s;
 }
 
 .skill1 {
   border: 0.5px solid white;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 7px;
   display: flex;
+  gap:5px;
   align-items: center;
   background-color: rgba(147, 143, 214, 0.4);
-  /* gap: 5px; */
 }
 
 .skill1 img {
@@ -334,10 +349,9 @@ a {
 
 .skill2 {
   background-color: rgba(147, 143, 214, 0.4);
-  /* opacity: 0.6; */
   align-self: center;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
   color: rgb(180, 243, 255);
   border: 0.5px solid white;
@@ -360,12 +374,27 @@ a {
 @media screen and (max-width:550px) {
   header ul {
     width: 95%;
+    padding: 0px 2px;
   }
 
-  header ul li button {
+  header ul li {
     margin: 7px 4px;
     padding: 5px 10px;
     font-size: 15px;
+  }
+  .profile{
+    margin-top: -20px;
+  }
+  .profiletext {
+    margin-top: 40px;
+    width: 90%;
+    padding-right: 0px;
+  }
+
+  .profile span {
+    margin-left: 0px;
+    font-size: 25px;
+    line-height: 1.2;
   }
 }
 
@@ -384,9 +413,17 @@ a {
     box-shadow: 0px 0px 20px 5px rgb(83, 106, 129)
   }
 
+
+  .profiletext {
+    margin-top: 40px;
+    width: 90%;
+    padding-right: 0px;
+  }
+
   .profile span {
-    margin: 20px 0 0 0;
-    font-size: 22px;
+    margin-left: 0px;
+    font-size: 25px;
+    line-height: 1.2;
   }
 
   .contect {
@@ -435,7 +472,7 @@ a {
 
 @media screen and (min-width:550px) and (max-width:1000px) {
   header ul {
-    width: 100%;
-    padding: 0px 25px;
+    width: 90%;
+    padding: 0px 5px;
   }
 }
