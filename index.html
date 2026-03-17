@@ -12,37 +12,42 @@
 <body>
     <header>
         <ul>
-            <li><button>Home</button></li>
-            <li><button>Work</button></li>
-            <li><button>Project</button></li>
-            <li><button>Contact</button></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#projcets">Project</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contect">Contact</a></li>
         </ul>
     </header>
     <main>
-        <section class="contaner">
+        <section class="contaner" id="Home">
             <div class="Home">
                 <div class="profile">
-                    <div class="imgbox"><img src="sanjay.jpg" alt="random"></div>
-                    <span>
-                        <h5 style="margin-bottom: 50px;">Hello, I am Sanjay Kumar Kumawat</h5>
-                        <h6>A Person Who</h6>
-                        <h2 style="max-width: 400px;">Judges a book by its cover...</h2>
-                        <h6>Because if the cover dosn't impressive then what else can do?</h6>
-                    </span>
+                    <div class="profi">
+
+                        <div class="imgbox"><img src="images\sanjay.jpg" alt="random"></div>
+                    </div>
+                    <div class="profiletext">
+                        <span>
+                            <h2>Hello, I'm </h2>
+                            <h2>Sanjay Kumawat</h2>
+                            <div class="box1" style="margin-top: 25px;">
+                                <h3>I'm a Software Engineer.</h3>
+                            </div>
+                            <h6>An Artificial Intelligence and Data Science engineering
+                                student with a strong base in Data
+                                Structures and Algorithms. I am passionate about developing intelligent applications,
+                                especially in web development. I focus on solving real-world problems through
+                                data-driven thinking and efficient, scalable code.
+                            </h6>
+                        </span>
+                        <div class="box2">
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1eMsCVIrgssvElW4_tLrkjWxHjbAFWmZs/view?usp=sharing"><button>Check
+                                    Resume</button></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="box1">
-                    <h1>I'm a Software Engineer.</h1>
-                    <h3>Currently, I'm Student at MBM University</h3>
-                </div>
-                <div class="box2">
-                    <h4>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A vel debitis ullam numquam
-                        perferendis aperiam facere, autem vero dolore? Accusamus, cum? Deleniti quaerat totam vero
-                        distinctio adipisci ab cum minima placeat saepe. Iusto aspernatur necessitatibus delectus
-                        tempore dolor fugiat suscipit.
-                    </h4>
-                </div>
-            </div>
         </section>
         <section id="projcets">
             <div class="Home">
@@ -52,38 +57,77 @@
                 <div class="allproject">
                     <div class="project">
                         <div class="img">
-                            <img src="sanjay.jpg" alt="random">
+                            <img src="images/grocery.jpg" alt="random">
                         </div>
                         <div class="content">
                             <h2>Grocery billing system</h2>
-                            <button>See Code</button>
+                            <p>This project is a Grocery Billing System designed to simplify the billing process for
+                                small shops. It allows users to add items, calculate total bills, apply basic logic,
+                                and generate accurate results efficiently. The project helped me strengthen my
+                                problem-solving skills and understand real-world application logic.
+                            </p>
+                            <a target="_blank" href="https://github.com/skkumawat0047/projectbill"><button>See
+                                    Code</button></a>
                         </div>
                     </div>
                     <div class="project">
                         <div class="img">
-                            <img src="" alt="random">
+                            <img src="images/currencycalculator.png" alt="random">
                         </div>
                         <div class="content">
-                            <h2>Grocery billing system</h2>
-                            <button>See Code</button>
+                            <h2>Currency Calculator</h2>
+                            <p>This Currency Calculator converts one currency into another using real-time logic.
+                                The project focuses on clean UI, accurate calculations, and user-friendly interaction.
+                                It helped me understand API usage, JavaScript logic, and dynamic data handling.
+                            </p>
+                            <a target="_blank"
+                                href="https://github.com/skkumawat0047/Project/tree/main/exchange"><button>See
+                                    Code</button></a>
                         </div>
                     </div>
                     <div class="project">
                         <div class="img">
-                            <img src="" alt="random">
+                            <img src="images/calculator.png" alt="random">
                         </div>
                         <div class="content">
-                            <h2>Grocery billing system</h2>
-                            <button>See Code</button>
+                            <h2>Calculator</h2>
+                            <p>A simple yet functional calculator built using HTML, CSS, and JavaScript.
+                                It performs basic arithmetic operations with a clean and responsive interface.
+                                This project enhanced my understanding of DOM manipulation and event handling.
+                            </p>
+                            <a target="_blank"
+                                href="https://github.com/skkumawat0047/Project/tree/main/calculator"><button>See
+                                    Code</button></a>
                         </div>
                     </div>
                     <div class="project">
                         <div class="img">
-                            <img src="" alt="random">
+                            <img src="images/tictoctac.png" alt="random">
                         </div>
                         <div class="content">
-                            <h2>Grocery billing system</h2>
-                            <button>See Code</button>
+                            <h2>Tic-Toc-Tac</h2>
+                            <p>This is a classic Tic-Tac-Toe game developed using JavaScript.
+                                It includes turn-based logic, winner detection, and a responsive design.
+                                Building this project improved my logical thinking and game development skills.
+                            </p>
+                            <a target="_blank"
+                                href="https://github.com/skkumawat0047/Project/tree/main/tictoegame"><button>See
+                                    Code</button></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/rockpaperseasor.png" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2>Rock Paper Scissor</h2>
+                            <p>An interactive Rock Paper Scissors game where users play against the computer.
+                                The game uses random logic and condition handling to determine the winner.
+                                This project strengthened my understanding of JavaScript logic and user interaction.
+                            </p>
+                            <a target="_blank"
+                                href="https://github.com/skkumawat0047/Project/tree/main/stonepaper"><button>See
+                                    Code</button></a>
                         </div>
                     </div>
                 </div>
@@ -92,163 +136,231 @@
         <section id="skills">
             <div class="Home">
                 <div class="heading">
-                    <h1 class="center">Skills</h1>
-                    <h4>Here are some of my skills on which I have been working on for the past 3 years.</h4>
+                    <h1 class="center" style="margin-bottom: 20px;">Skills</h1>
+                    <h4 style="opacity: 0.7;">Here are the technical skills I have developed through academic learning,
+                        personal projects, and continuous practice over the past few years.
+                    </h4>
                 </div>
                 <div class="skillbox">
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div style="min-width: 100%;">
+                        <h2>WEB-DEVELOPMENT</h2>
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\HTML.jpg" alt="">
+                        HTML
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\CSS.png" alt="">
+                        CSS
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\js.png" alt="">
+                        JS
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\Nodejs.png" alt="">
+                        Node JS
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\react.png" alt="">
+                        React Js
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\exjs.png" alt="">
+                        Express JS
                     </div>
                 </div>
                 <div class="skillbox">
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div style="width: 100%;">
+                        <h2>DATA SCIENCE</h2>
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\python.jpg" alt="">
+                        Python
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\numpy.png" alt="">
+                        Numpy
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\pandas.png" alt="">
+                        Pandas
                     </div>
                     <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                        <img src="images\matplotlib.png" alt="">
+                        Matplotlib
                     </div>
                 </div>
                 <div class="skillbox">
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div style="width: 100%;">
+                        <h2>LANGUAGES</h2>
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        Python
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        C++
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        Java-Script
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        C
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
-                    </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        SQL
                     </div>
                 </div>
                 <div class="skillbox">
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div style="width: 100%;">
+                        <h2>TOOLS</h2>
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        VsCode
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        Git
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        Github
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        Google Collab
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        MySQL
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                </div>
+                <div class="skillbox">
+                    <div style="width: 100%;">
+                        <h2>OTHERS</h2>
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        DSA (C++)
                     </div>
-                    <div class="skill1">
-                        <img src="sanjay.jpg" alt="">
-                        numpy
+                    <div class="skill2">
+                        OOPs
+                    </div>
+                    <div class="skill2">
+                        Netlify
+                    </div>
+                    <div class="skill2">
+                        LeetCodeder
+                    </div>
+                    <div class="skill2">
+                        GFG(100+ qs.)
                     </div>
                 </div>
             </div>
 
+        </section>
+        <section id="certificates">
+            <div class="Home">
+                <div class="heading">
+                    <h1>My certificates</h1>
+                </div>
+                <div class="allproject">
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/skill.png" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2>AI & Machine Learning Internship – Skillonation</h2>
+                            <p>
+                                Completed a 15-day internship focused on Artificial Intelligence and Machine Learning.
+                                Acquired knowledge of fundamental concepts, core principles, and practical applications.
+                                Actively participated in delivering awareness sessions and demonstrated strong
+                                communication and learning skills throughout the program.
+                            </p>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1MIlTyY5ZELz_dYJEsAUVdDvQ-y8SIKIQ/view?usp=sharing"><button>See
+                                    certificate</button></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/AI.jpg" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2 style="margin-bottom: 10px;">Artificial Intelligence</h2>
+                            <p>This certificate represents my participation in an Artificial Intelligence workshop
+                                organized under the iStart initiative. During this workshop, I gained practical exposure
+                                to the fundamentals of Artificial Intelligence, including problem-solving approaches,
+                                real-world AI applications, and an overview of machine learning concepts. The workshop
+                                helped me understand how AI is transforming industries and inspired me to explore
+                                intelligent systems and data-driven solutions further.
+
+                            </p>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1c-Yw2U3YahRPOQvAKw6Vwxq-gxq5ebfK/view?usp=sharing"><button style="margin-top: 30px;">See
+                                    certificate</button></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/50daybadges.png" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2>LeetCode 50 Days Badge (2026)</h2>
+                            <p>Successfully maintained a 50-day coding streak on LeetCode, solving algorithmic and data structure problems daily. This accomplishment highlights consistency, discipline, and continuous improvement in problem-solving abilities.
+                            </p>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1MIlTyY5ZELz_dYJEsAUVdDvQ-y8SIKIQ/view?usp=sharing"><button>See
+                                    certificate</button></a>
+                        </div>
+                    </div>                    
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/DSA.png" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2 style="margin-bottom: 10px;">DSA Quiz</h2>
+                            <p>This certificate highlights my achievement of securing 23rd rank in a
+                                Data Structures and Algorithms Quiz organized by Arya College.
+                                The quiz tested core concepts such as arrays, linked lists, stacks, queues,
+                                trees, and algorithmic problem-solving techniques. This accomplishment reflects
+                                my strong analytical skills, logical thinking, and continuous practice in DSA using C++.
+                            </p>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1QgrWSWec-G6KDMmmUjT30Tciu4IO67Dq/view?usp=sharing"><button style="margin-top: 30px;">See
+                                    certificate</button></a>
+                        </div>
+                    </div>                    
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/icat.png" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2>ICAT Aptitude Test Certificate</h2>
+                            <p>This certificate was awarded for participating in the Internship Common Aptitude Test
+                                (ICAT). The assessment evaluated core skills such as logical reasoning, quantitative
+                                aptitude, and problem-solving abilities. This experience strengthened my analytical
+                                thinking and prepared me for real-world internship challenges.
+                            </p>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1mF_zasAw-hsELWmp3VVvAHcg-DuRWoV4/view?usp=sharing"><button>See
+                                    certificate</button></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="images/NFL.jpg" alt="random">
+                        </div>
+                        <div class="content">
+                            <h2 style="margin-bottom: 10px;">NFL Quiz</h2>
+                            <p>This certificate was awarded for successful participation in the
+                                National Financial Literacy Quiz. The quiz focused on essential financial concepts
+                                such as budgeting, savings, investments, digital banking, and financial awareness.
+                                This experience enhanced my understanding of financial responsibility and the
+                                importance of financial literacy in personal and professional life.
+                            </p>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1MIlTyY5ZELz_dYJEsAUVdDvQ-y8SIKIQ/view?usp=sharing"><button style="margin-top: 30px;">See
+                                    certificate</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="about">
 
@@ -257,8 +369,11 @@
             <div class="Home">
                 <div class="contectbox">
                     <h1>Contact</h1>
-                    <p>I'm currently looking to join a cross-functional team that values improving people's lives
-                        through accessible design. or have a project in mind? Let's connect.</p>
+                    <p>I am currently looking for opportunities where I can learn, grow,
+                        and contribute as a software developer. If you have an exciting project,
+                        internship, or collaboration in mind, feel free to reach out.
+                        Let’s build something meaningful together.
+                    </p>
                     <p class="email">sk.kumawat0047@gmail.com</p>
                 </div>
             </div>
@@ -267,43 +382,52 @@
     <div class="contect">
         <div class="box">
             <h1>Get In Touch</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et fugiat hic quas voluptas vitae
-                eligendi, perspiciatis voluptates ut enim atque.</h3>
-            <div class="sms">
+            <h3>Have a question, idea, or opportunity?
+                I’m always open to discussing new projects, creative ideas,
+                or opportunities to be part of something impactful.
+                Feel free to drop a message — I’ll get back to you as soon as possible.
+            </h3>
+            <form class="sms" action="https://formspree.io/f/xeelqjdz" method="POST">
+
                 <label>Name:</label>
-                <input type="text" placeholder="Name" required>
+                <input type="text" name="name" placeholder="Name" required>
+
                 <label>Email:</label>
-                <input type="email" placeholder="Email" required>
+                <input type="email" name="email" placeholder="Email" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
-            </div>
-            <button>submit</button>
+
+                <button type="submit" class="submit">Submit</button>
+
+            </form>
         </div>
     </div>
     <footer>
         <div class="ids">
             <span>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpfDSQkPGxWshGjlMshwjnqstZCRSpCcGWPHpGlMpvzMFptxbSTXjGxGRTTSfvzqwbPVXL"
+                <a target="_blank"
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpfDSQkPGxWshGjlMshwjnqstZCRSpCcGWPHpGlMpvzMFptxbSTXjGxGRTTSfvzqwbPVXL"
                     target="_blank"><i class="fa-regular fa-envelope"></i></a>
             </span>
             <span>
-                <a href="https://www.linkedin.com/in/sanjay-kumawat-461b23358/" target="_blank">
+                <a target="_blank" href="https://www.linkedin.com/in/sanjay-kumawat-461b23358/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i></a>
             </span>
             <span>
-                <a href="https://www.instagram.com/direct/t/17845466547210332/" target="_blank">
+                <a target="_blank" href="https://www.instagram.com/direct/t/17845466547210332/" target="_blank">
                     <i class="fa-brands fa-instagram"></i></a>
             </span>
             <span>
-                <a href="https://github.com/skkumawat0047/" target="_blank">
+                <a target="_blank" href="https://github.com/skkumawat0047/" target="_blank">
                     <i class="fa-brands fa-github"></i></a>
             </span>
             <span>
-                <a href="https://web.telegram.org/a/#6090597843" target="_blank"><i
+                <a target="_blank" href="https://web.telegram.org/a/#6090597843" target="_blank"><i
                         class="fa-brands fa-telegram"></i></a>
             </span>
             <span>
-                <a href="https://x.com/sanjay_kumar_47" target="_blank">
+                <a target="_blank" href="https://x.com/sanjay_kumar_47" target="_blank">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </span>
@@ -314,6 +438,7 @@
             </strong>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
